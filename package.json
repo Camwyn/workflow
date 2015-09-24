@@ -30,7 +30,7 @@
     "grunt-postcss": "^0.6.0",
     "grunt-sass": "^1.0.0",
     "load-grunt-tasks": "^3.2.0",
-    "load-grunt-config",
+    "load-grunt-config": "^0.17.2",
     "qunitjs": "~1.18.0"
   },
   "keywords": []
