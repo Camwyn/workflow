@@ -4,10 +4,10 @@ module.exports = function (grunt, options) {
 		main: {
 			options: {
 				mode: 'zip',
-				archive: './release/workflow_test.<%= pkg.version %>.zip'
+				archive: './release/workflow_test.<%= package.version %>.zip'
 			},
 			expand: true,
-			cwd: 'release/<%= pkg.version %>/',
+			cwd: 'release/<%= package.version %>/',
 			src: ['**/*'],
 			dest: 'workflow_test/'
 		}

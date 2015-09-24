@@ -25,7 +25,7 @@ module.exports = function (grunt, options) {
 				'!phpunit.xml',
 				'!phpunit.xml.dist'
 			],
-			dest: 'release/<%= pkg.version %>/'
+			dest: 'release/<%= package.version %>/'
 		}
 	}
 };
