@@ -1,0 +1,28 @@
+# Version Control
+.svn
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+nbproject/
+
+# Compass/SASS/SCSS
+.sass-cache
+
+# Compiled files
+assets/css/*.css
+assets/css/*.min.css
+assets/css/*.css.map
+assets/js/*.min.js
+
+# Other
+node_modules
+npm-debug.log
+tmp

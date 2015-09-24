@@ -1,0 +1,32 @@
+{
+	"name": "workflow-test",
+	"description": "Tester for workflow changes",
+	"version": "0.0.1",
+	"type": "wordpress-theme",
+	"keywords": [],
+	"homepage": "http://wordpress.org/themes",
+	"license": "GPLv2.0+",
+	"authors": [
+		{
+			"name": "Stephen Page",
+			"email": "stephen@10up.com",
+		"homepage": "10up.com",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4"
+	},
+    "require-dev": {
+	    "antecedent/patchwork"             : "1.2.*",
+        "phpunit/phpunit"                  : "*@stable",
+	    "brianium/paratest"                : "dev-master",
+        "10up/wp_mock"                     : "dev-master",
+        "johnpbloch/composer-grunt-bridge" : "master"
+    },
+    "extra": {
+        "grunt-task": "deploy"
+      } }
+    }
+}
