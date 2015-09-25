@@ -13,4 +13,6 @@
 	    document.getElementById( 'body' ).innerHTML = 'Body text.';
 	}
 
+	testFunction();
+
 } )( this );
