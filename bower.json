@@ -2,7 +2,7 @@
   "name": "workflow-test",
   "version": "0.0.1",
   "main": "/",
-  "license": "GPLv2+",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "*.md",

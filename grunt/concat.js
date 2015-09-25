@@ -6,7 +6,7 @@ module.exports = function (grunt, options) {
 			banner: '/*! <%= package.title %> - v<%= package.version %>\n' +
 				' * <%= package.homepage %>\n' +
 				' * Copyright (c) <%= grunt.template.today("yyyy") %>;' +
-				' * Licensed GPLv2+' +
+				' * Licensed MIT' +
 				' */\n'
 		},
 		main: {
