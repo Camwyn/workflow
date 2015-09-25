@@ -13,7 +13,6 @@ module.exports = function (grunt, options) {
 			cwd: 'assets/css/',
 			src: ['*.css'],
 			dest: 'assets/css/',
-			//don't use .min.css - requires less logic in the theme
 			ext: '.css'
 		}
 	}

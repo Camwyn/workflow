@@ -9,5 +9,8 @@
 ( function( window, undefined ) {
 	'use strict';
 
+	function testFunction() {
+	    document.getElementById( 'body' ).innerHTML = 'Body text.';
+	}
 
 } )( this );
