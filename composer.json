@@ -16,16 +16,14 @@
 	],
 	"minimum-stability": "dev",
 	"require": {
-		"php": ">=5.4"
+		"php": ">=5.4",
+		"johnpbloch/composer-grunt-bridge" : "master"
 	},
 	"require-dev": {
 		"antecedent/patchwork"             : "1.2.*",
 		"phpunit/phpunit"                  : "*@stable",
 		"brianium/paratest"                : "dev-master",
 		"10up/wp_mock"                     : "dev-master"
-	},
-	"require": {
-		"johnpbloch/composer-grunt-bridge" : "master"
 	},
 	"extra": {
 		"grunt-task": "deploy"
