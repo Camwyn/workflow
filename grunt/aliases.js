@@ -29,6 +29,12 @@ module.exports = {
 			'concat'
 		]
 	},
+	'imagemin-deploy': {
+		description: 'Compress images',
+		tasks: [
+			'imagemin'
+		]
+	},
 	'deploy': {
 		description: 'Compile, post-process and minify css. Error check, concatenate and minify js.',
 		tasks: [

@@ -22,6 +22,7 @@
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-qunit": "^0.7.0",
     "grunt-contrib-uglify": "^0.9.1",
@@ -30,9 +31,14 @@
     "grunt-phpunit": "^0.3.6",
     "grunt-postcss": "^0.6.0",
     "grunt-sass": "^1.0.0",
+    "imagemin-mozjpeg": "^5.1.0",
     "load-grunt-config": "^0.17.2",
     "load-grunt-tasks": "^3.2.0",
     "qunitjs": "~1.18.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "imagemin-jpegoptim": "^4.0.0",
+    "jpegoptim-bin": "^2.0.1"
+  }
 }
