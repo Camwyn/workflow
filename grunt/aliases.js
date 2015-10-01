@@ -1,20 +1,4 @@
 module.exports = {
-	'css-deploy': {
-		description: 'Compile, post-process and minify css.',
-		tasks: [
-			'sass',
-			'postcss',
-			'cssmin'
-		]
-	},
-	'js-deploy': {
-		description: 'Error check, concatenate and minify js.',
-		tasks: [
-			'jshint',
-			'concat',
-			'uglify'
-		]
-	},
 	'css': {
 		description: 'Compile and post-process css.',
 		tasks: [
@@ -29,17 +13,24 @@ module.exports = {
 			'concat'
 		]
 	},
+	'css-deploy': {
+		description: 'Compile, post-process and minify css.',
+		tasks: [
+			'css',
+			'cssmin'
+		]
+	},
+	'js-deploy': {
+		description: 'Error check, concatenate and minify js.',
+		tasks: [
+			'js',
+			'uglify'
+		]
+	},
 	'imagemin-deploy': {
 		description: 'Compress images',
 		tasks: [
 			'imagemin'
-		]
-	},
-	'deploy': {
-		description: 'Compile, post-process and minify css. Error check, concatenate and minify js.',
-		tasks: [
-			'js-deploy',
-			'css-deploy'
 		]
 	},
 	'default': {
@@ -47,6 +38,14 @@ module.exports = {
 		tasks: [
 			'js',
 			'css'
+		]
+	},
+	'deploy': {
+		description: 'Compile, post-process and minify css. Error check, concatenate and minify js. Minify images.',
+		tasks: [
+			'js-deploy',
+			'css-deploy',
+			'imagemin-deploy'
 		]
 	},
 	'test': {

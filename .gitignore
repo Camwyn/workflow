@@ -22,6 +22,7 @@ assets/css/*.css.map
 assets/js/*.js
 
 # Other
+vendor
 node_modules
 npm-debug.log
 tmp
