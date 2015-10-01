@@ -6,13 +6,8 @@
  * Licensed under the GPLv2+ license.
  */
 
-( function( window, undefined ) {
-	'use strict';
+function testFunction() {
+    document.getElementById( 'body' ).innerHTML = 'Body text.';
+}
 
-	function testFunction() {
-	    document.getElementById( 'body' ).innerHTML = 'Body text.';
-	}
-
-	testFunction();
-
-} )( this );
+testFunction();
