@@ -8,7 +8,7 @@ module.exports = function (grunt, options) {
 				' * Copyright (c) <%= grunt.template.today("yyyy") %>;' +
 				' * Licensed MIT' +
 				' */\n' +
-				' */\n' +
+				' \n' +
 				';(function( window, undefined ){ \n "use strict"; \n \n ',
 				footer: '}( window ));'
 		},

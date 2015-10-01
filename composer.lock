@@ -4,8 +4,172 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85f1f971d9cc0519777dc04a2be7c450",
-    "packages": [],
+    "hash": "5a1ff6f9041950c3f9ed1ae0f184388d",
+    "packages": [
+        {
+            "name": "eloquent/composer-npm-bridge",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/composer-npm-bridge.git",
+                "reference": "689ebcc8330dc118cc80371d3a18bd6ef63cb05a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/composer-npm-bridge/zipball/689ebcc8330dc118cc80371d3a18bd6ef63cb05a",
+                "reference": "689ebcc8330dc118cc80371d3a18bd6ef63cb05a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "icecave/isolator": "~2",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master@dev",
+                "icecave/archer": "~1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Eloquent\\Composer\\NpmBridge\\NpmBridgePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Composer\\NpmBridge\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "NPM integration for Composer packages.",
+            "homepage": "https://github.com/eloquent/composer-npm-bridge",
+            "keywords": [
+                "Bridge",
+                "composer",
+                "composer-plugin",
+                "integration",
+                "npm",
+                "package",
+                "plugin"
+            ],
+            "time": "2014-09-08 03:57:31"
+        },
+        {
+            "name": "icecave/isolator",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/IcecaveStudios/isolator.git",
+                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/IcecaveStudios/isolator/zipball/97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
+                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "icecave/archer": "~1"
+            },
+            "suggest": {
+                "eloquent/asplode": "Drop-in exception-based error handling."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Icecave\\Isolator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "Dependency injection for global functions.",
+            "homepage": "https://github.com/IcecaveStudios/isolator",
+            "keywords": [
+                "fake",
+                "mock",
+                "phake",
+                "phpunit",
+                "test",
+                "unit"
+            ],
+            "time": "2014-08-12 03:16:11"
+        },
+        {
+            "name": "johnpbloch/composer-grunt-bridge",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/composer-grunt-bridge.git",
+                "reference": "d8b00cca795be973c30cbee11275bee27c66f526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/composer-grunt-bridge/zipball/d8b00cca795be973c30cbee11275bee27c66f526",
+                "reference": "d8b00cca795be973c30cbee11275bee27c66f526",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "eloquent/composer-npm-bridge": "~2.1",
+                "icecave/isolator": "~2",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "JPB\\Composer\\GruntBridge\\GruntBridgePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "JPB\\Composer\\GruntBridge\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John P Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "Grunt integration for Composer packages.",
+            "homepage": "https://github.com/johnpbloch/composer-grunt-bridge",
+            "keywords": [
+                "Bridge",
+                "composer",
+                "composer-plugin",
+                "grunt",
+                "integration",
+                "package",
+                "plugin"
+            ],
+            "time": "2015-09-24 17:35:10"
+        }
+    ],
     "packages-dev": [
         {
             "name": "10up/wp_mock",
@@ -242,62 +406,6 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "eloquent/composer-npm-bridge",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eloquent/composer-npm-bridge.git",
-                "reference": "689ebcc8330dc118cc80371d3a18bd6ef63cb05a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/composer-npm-bridge/zipball/689ebcc8330dc118cc80371d3a18bd6ef63cb05a",
-                "reference": "689ebcc8330dc118cc80371d3a18bd6ef63cb05a",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "1.0.0",
-                "icecave/isolator": "~2",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master@dev",
-                "icecave/archer": "~1"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Eloquent\\Composer\\NpmBridge\\NpmBridgePlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Eloquent\\Composer\\NpmBridge\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Erin Millard",
-                    "email": "ezzatron@gmail.com",
-                    "homepage": "http://ezzatron.com/"
-                }
-            ],
-            "description": "NPM integration for Composer packages.",
-            "homepage": "https://github.com/eloquent/composer-npm-bridge",
-            "keywords": [
-                "Bridge",
-                "composer",
-                "composer-plugin",
-                "integration",
-                "npm",
-                "package",
-                "plugin"
-            ],
-            "time": "2014-09-08 03:57:31"
-        },
-        {
             "name": "hamcrest/hamcrest-php",
             "version": "v1.2.2",
             "source": {
@@ -341,113 +449,6 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
-        },
-        {
-            "name": "icecave/isolator",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/IcecaveStudios/isolator.git",
-                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/IcecaveStudios/isolator/zipball/97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
-                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "icecave/archer": "~1"
-            },
-            "suggest": {
-                "eloquent/asplode": "Drop-in exception-based error handling."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Icecave\\Isolator\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "James Harris",
-                    "email": "james.harris@icecave.com.au",
-                    "homepage": "https://github.com/jmalloc"
-                }
-            ],
-            "description": "Dependency injection for global functions.",
-            "homepage": "https://github.com/IcecaveStudios/isolator",
-            "keywords": [
-                "fake",
-                "mock",
-                "phake",
-                "phpunit",
-                "test",
-                "unit"
-            ],
-            "time": "2014-08-12 03:16:11"
-        },
-        {
-            "name": "johnpbloch/composer-grunt-bridge",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johnpbloch/composer-grunt-bridge.git",
-                "reference": "d8b00cca795be973c30cbee11275bee27c66f526"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/composer-grunt-bridge/zipball/d8b00cca795be973c30cbee11275bee27c66f526",
-                "reference": "d8b00cca795be973c30cbee11275bee27c66f526",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "eloquent/composer-npm-bridge": "~2.1",
-                "icecave/isolator": "~2",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master@dev"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "JPB\\Composer\\GruntBridge\\GruntBridgePlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "JPB\\Composer\\GruntBridge\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John P Bloch",
-                    "email": "me@johnpbloch.com"
-                }
-            ],
-            "description": "Grunt integration for Composer packages.",
-            "homepage": "https://github.com/johnpbloch/composer-grunt-bridge",
-            "keywords": [
-                "Bridge",
-                "composer",
-                "composer-plugin",
-                "grunt",
-                "integration",
-                "package",
-                "plugin"
-            ],
-            "time": "2015-09-24 17:35:10"
         },
         {
             "name": "mockery/mockery",
@@ -865,16 +866,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.9",
+            "version": "4.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b"
+                "reference": "463163747474815c5ccd4ae12b5b355ec12158e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/73fad41adb5b7bc3a494bb930d90648df1d5e74b",
-                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/463163747474815c5ccd4ae12b5b355ec12158e8",
+                "reference": "463163747474815c5ccd4ae12b5b355ec12158e8",
                 "shasum": ""
             },
             "require": {
@@ -933,7 +934,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-09-20 12:56:44"
+            "time": "2015-10-01 09:14:30"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1369,12 +1370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f50aafa4a665efeda92b07779d8a6b09af50ca89"
+                "reference": "b44dcb71e14cec5484c7224a104976b7d541336e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f50aafa4a665efeda92b07779d8a6b09af50ca89",
-                "reference": "f50aafa4a665efeda92b07779d8a6b09af50ca89",
+                "url": "https://api.github.com/repos/symfony/console/zipball/b44dcb71e14cec5484c7224a104976b7d541336e",
+                "reference": "b44dcb71e14cec5484c7224a104976b7d541336e",
                 "shasum": ""
             },
             "require": {
@@ -1418,7 +1419,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-30 20:26:55"
+            "time": "2015-10-01 15:32:55"
         },
         {
             "name": "symfony/process",
@@ -1528,8 +1529,6 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=5.4"
-    },
+    "platform": [],
     "platform-dev": []
 }

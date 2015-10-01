@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer-core": "~5.2.1",
+    "autoprefixer": "^6.0.0",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compress": "^0.13.0",
@@ -36,9 +36,5 @@
     "load-grunt-tasks": "^3.2.0",
     "qunitjs": "~1.18.0"
   },
-  "keywords": [],
-  "dependencies": {
-    "imagemin-jpegoptim": "^4.0.0",
-    "jpegoptim-bin": "^2.0.1"
-  }
+  "keywords": []
 }
