@@ -1,15 +1,36 @@
 # workflow
-Test repository for workflow suggestions.
+Toward a better workflow.
 
-Initialized using [10up's](http://10up.com/) [wp-make](https://github.com/10up/generator-wp-make), then we customized the folder layout.
+## What Is It?
+A test repository for workflow suggestions. Initialized using [10up's](http://10up.com/) [wp-make](https://github.com/10up/generator-wp-make), then we customized the folder layout.
 
-Objectives:
+## Objectives:
 - To organize and minify all our assets (css, javascript, images).
 - To modularize our grunt files to make maintenance simpler.
 - To remove the need for committing any compiled code.
 - To switch between minified and unminified based on environment.
 - To ease the process of commiting and deployment.
 
+## Requirements
+Node.js
+
+## Installation
+1. Clone this repository.
+2. Change to the workflow (or whatever you named it) directory: `cd workflow`
+3. Install the grunt dependencies: `npm install`
+4. Run your first compile: `composer update` (will create minified files)
+5. Profit!
+
+## How Do I Use It?
+### Locally:
+While working on your local instance, just run `grunt` or `grunt watch` when you change or add any assets (css, javascript, images).
+
+### Staging _or_ "Live" Server:
+After deploy, run `composer install` or `composer update` and all of the files will be compiled for you.
+
+**Note:** If you prefer to compile locally (for peace of mind), you can run the same command locally and then push your files up via FTP or your favorite flavor of file transmission.
+
+## What Does It Do?
 Processed css (from Sass in `assets/css/sass`) ends up in the `assets/css` directory.
 
 Processed javascript ends up in the `assets/js` directory. The `assets/js/vendor` directory is not processed by default.
